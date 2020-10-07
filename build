@@ -1,0 +1,12 @@
+docker build \
+-t imagename \
+--build-arg DB_NAME=nacorac2 \
+--build-arg DB_SERVER=10.6.20.98 \
+--build-arg DB_USER=postgres \
+--build-arg DB_PASSWORD=3ArtiParola \
+--build-arg DB_PORT=5432 \
+--build-arg ADMIN_PASS=12345 \
+--build-arg XMS=256m \
+--build-arg XMX=512m \
+--build-arg MAX_PERM=192M \
+--no-cache .
