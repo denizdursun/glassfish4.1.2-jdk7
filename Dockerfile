@@ -53,3 +53,4 @@ WORKDIR     /usr/local/glassfish4/bin
 
 # verbose causes the process to remain in the foreground so that docker can track it
 CMD asadmin start-domain --verbose
+HEALTHCHECK --start-period=120s --interval=5s --timeout=2s --retries=10 CMD curl --silent --fail http://localhost:8080/app/ || exit 1
