@@ -1,4 +1,4 @@
-docker build \
+docker image build \
 -t imagename \
 --build-arg DB_NAME=nacorac2 \
 --build-arg DB_SERVER=10.6.20.98 \
